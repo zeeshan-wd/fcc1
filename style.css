@@ -1,0 +1,156 @@
+#simon-header {
+  font-size: 50px;
+  font-family: 'Pacifico';
+}
+ 
+/* Main game container (4 buttons) */
+#simon-game-container {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Main game button styling */
+.simon-button-game {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 0px black;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.simon-button-game:active {
+  box-shadow: 0px 1px 1px 0px black;
+  transform: scale(0.95);
+  opacity: 0.75;
+}
+
+/* Simon's animaiton for performs the moves in a sequence*/
+.simon-sequence-animation {
+  box-shadow: 0px 1px 1px 0px black;
+  transform: scale(0.90);
+  background: linear-gradient(45deg, red, white);
+  transition: all 0.5s ease-in-out 0s;
+  opacity: 0.75;
+}
+
+.simon-button-game:focus {
+  outline: none;
+}
+
+#simon-button-red {
+  background: red;
+  background: linear-gradient(60deg, red, #ff8282);
+}
+
+#simon-button-blue {
+  background: blue;
+  background: linear-gradient(60deg, blue, #809eff);
+}
+
+#simon-button-green {
+  background: green;
+  background: linear-gradient(60deg, green, #7cff7c);
+}
+
+#simon-button-yellow {
+  background: yellow;
+  background: linear-gradient(60deg, yellow, #fff380);
+}
+
+/* Settings (Start) & (Strict) s*/
+#simon-settings-label {
+  font-size: 9px;
+  font-family: 'Open Sans';
+  display: inline-block;
+  font-weight: 600;
+  color: #717171;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+/* Settings button styling */
+.simon-button-settings {
+  box-shadow: 0px 1px 1px 0px black;
+  line-height: 5px;
+  font-size: 10px;
+  font-family: 'Open Sans';
+  width: 50px;
+  display: inline;
+  height: 25px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.simon-button-settings:focus {
+  outline: none;
+}
+
+.simon-button-settings:active {
+  box-shadow: 0px 1px 1px 0px black;
+}
+
+#simon-button-start {
+  background-color: #65b9ed;
+  color: #1C4E7E;
+  border: 2px solid #1C4E7E;
+}
+
+#simon-button-start:active {
+  transform: scale(0.98);
+}
+
+#simon-button-start:hover {
+  background-color: #39a3e5;
+}
+
+#simon-button-strictmode {
+  background-color: #ffb42a;
+  color: #9a5b04;
+  border: 2px solid #9a5b04;
+}
+
+#simon-button-strictmode:active {
+  transform: scale(0.98);
+}
+
+#simon-button-strictmode:hover {
+  background-color: #eb9900;
+}
+
+#simon-score-container {
+  margin-top: 50px;
+}
+ 
+/* Score-board */
+.score-style {
+  font-size: 32px;
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  color: white;
+  border: 2.5px solid black;
+  background-color: #505050;
+  box-shadow: 0px 1px 1px 0px black;
+}
+
+#score-right {
+  border-left: 1.25px solid black;
+}
+
+#score-left {
+  border-right: 1.25px solid black;
+}
+#strict-mode-label {
+  font-size: 10px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: #717171;
+}
+
+#simon-settings-container {
+  margin-bottom: 30px;
+}
